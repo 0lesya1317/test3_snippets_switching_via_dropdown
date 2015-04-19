@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Web Project 3</title>
+    </head>
+    <body>
+        <h1>New Web Project Page 3</h1>
+        
+        
+        <br />
+        <select id="mySelect" onchange="myFunction()">
+        	<option value="snippet.html" selected>Snippet 0</option>
+  			<option value="snippet1.html">Snippet 1</option>
+  			<option value="snippet2.html">Snippet 2</option>
+  			<option value="snippet3.html">Snippet 3</option>
+		</select>
+		
+		
+		<p id="demo"></p>
+
+		<script>
+		function myFunction() {
+    		var x = document.getElementById("mySelect").value;
+    		document.getElementById("demo").innerHTML = "You selected: " + x;
+    		document.getElementById("snippetTest").data = x;
+		}
+		</script>
+		
+        <b>blue green yellow red</b> <br />
+        <object id="snippetTest" width="500px" height="250px" data="snippet.html"> </object>
+     	
+    </body>
+</html>
